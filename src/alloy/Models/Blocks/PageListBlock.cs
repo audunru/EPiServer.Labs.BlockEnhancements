@@ -52,6 +52,70 @@ namespace AlloyTemplates.Models.Blocks
 
         [Display(
             GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder2 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder3 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder4 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder5 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder6 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder7 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder8 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
+            Order = 4)]
+        [DefaultValue(FilterSortOrder.PublishedDescending)]
+        [UIHint("SortOrder")]
+        [BackingType(typeof(PropertyNumber))]
+        public virtual FilterSortOrder SortOrder9 { get; set; }
+
+        [Display(
+            GroupName = SystemTabNames.Content,
             Order = 5)]
         [Required]
         public virtual PageReference Root { get; set; }
@@ -69,6 +133,7 @@ namespace AlloyTemplates.Models.Blocks
         [Display(
             GroupName = SystemTabNames.Content,
             Order = 8)]
+        [Required]
         public virtual bool Recursive { get; set; }
 
         #region IInitializableContent

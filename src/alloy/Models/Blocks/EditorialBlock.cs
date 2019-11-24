@@ -3,6 +3,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Labs.BlockEnhancements.InlineBlocksEditing;
+using ImageVault.EPiServer;
 
 namespace AlloyTemplates.Models.Blocks
 {
@@ -21,5 +22,7 @@ namespace AlloyTemplates.Models.Blocks
         public virtual XhtmlString MainBody { get; set; }
 
         public virtual ContentArea NestedContentArea { get; set; }
+
+        public virtual MediaReference Media { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
 using AlloyTemplates.Models.Blocks;
+using ImageVault.EPiServer;
 
 namespace AlloyTemplates.Models.Pages
 {
@@ -32,5 +33,10 @@ namespace AlloyTemplates.Models.Pages
 
         [AllowedTypes(typeof(ButtonBlock))]
         public virtual ContentArea ButtonsOnly { get; set; }
+
+        public virtual MediaReference Media { get; set; }
+
+        [BackingType(typeof(PropertyMediaList))]
+        public virtual MediaReferenceList<MediaReference> MediaList { get; set; }
     }
 }

@@ -169,9 +169,27 @@
     <Reference Include="EPiServer.Web.WebControls, Version=11.10.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EPiServer.CMS.AspNet.11.10.0\lib\net461\EPiServer.Web.WebControls.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.Client, Version=5.8.82.0, Culture=neutral, PublicKeyToken=5adb7bea47dfc40a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageVault.Client.5.8.82\lib\net45\ImageVault.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageVault.Common, Version=5.8.82.0, Culture=neutral, PublicKeyToken=5adb7bea47dfc40a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageVault.Common.5.8.82\lib\net45\ImageVault.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer, Version=11.6.169.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageVault.EPiServer.11.6.169\lib\net461\ImageVault.EPiServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer.Common, Version=5.6.169.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageVault.EPiServer.11.6.169\lib\net461\ImageVault.EPiServer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer.UI, Version=11.6.169.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\ImageVault.EPiServer.UI.11.6.169\lib\net461\ImageVault.EPiServer.UI.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
@@ -239,7 +257,12 @@
     <Reference Include="System.Data.SqlClient, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Data.SqlClient.4.4.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -276,6 +299,9 @@
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
@@ -465,11 +491,22 @@
     <Content Include="modules\_protected\episerver-labs-block-enhancements\1.0.0\Scripts\store-initializer.js" />
     <Content Include="modules\_protected\episerver-labs-block-enhancements\module.config" />
     <Content Include="modules\_protected\episerver-labs-block-enhancements\web.config" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\crop.svg" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\error.html" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\imagevault-tinymce.js" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\imagevault-window.html" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\lib\es6-promise.min.js" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\vault_color.svg" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\vault_grey.svg" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\window-script.js" />
+    <Content Include="Readme.ImageVault.EPiServer.txt" />
     <Content Include="Resources\LanguageFiles\PropertyNames_sv.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="web.config.transform" />
     <None Include="Elmah.Athz.config" />
+    <Content Include="imagevault.client.config" />
+    <Content Include="ImageVault.EPiServer.UI.readme.markdown" />
     <None Include="Models\Blocks\_ReadMe.txt" />
     <None Include="Models\Pages\_ReadMe.txt" />
     <Content Include="modules\_protected\EPiServer.Search.Cms\IndexContent.aspx" />
@@ -549,6 +586,11 @@
     <None Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
     <None Include="modules\_protected\EPiServer.Forms\Forms.config" />
     <None Include="modules\_protected\EPiServer.Forms\Views\ElementBlocks\Web.config" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\web.config" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\Views\Shared\DisplayTemplates\readme.md" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\Views\Shared\DisplayTemplates\MediaReferenceList`1.cshtml" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\Views\Shared\DisplayTemplates\MediaReference.cshtml" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\ImageVault.EPiServer.UI.zip" />
     <None Include="Views\_ReadMe.txt" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
